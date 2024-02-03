@@ -1,1 +1,5 @@
+altgraph==0.17.4
+packaging==23.2
+pyinstaller==6.3.0
+pyinstaller-hooks-contrib==2024.0
 TKinterModernThemes==1.10.2
