@@ -1,5 +1,5 @@
 ##
-# Mulipost
+# Multipost
 #
 # @file
 # @version 0.1
@@ -10,12 +10,12 @@
 
 build:
 	@echo "Building..."
-	@pyinstaller --noconfirm --name=mulipost --collect-data TKinterModernThemes app.py
+	@pyinstaller --noconfirm --name=multipost --collect-data TKinterModernThemes app.py
 
 install:
 	@echo "Installing..."
-	@cp dist/mulipost ~/.local/share/mulipost
-	@ln -s ~/.local/share/mulipost/mulipost ~/.local/bin/mulipost
+	@cp dist/multipost ~/.local/share/multipost
+	@ln -s ~/.local/share/multipost/multipost ~/.local/bin/multipost
 
 
 
