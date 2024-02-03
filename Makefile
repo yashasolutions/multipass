@@ -6,7 +6,7 @@
 
 .PHONY: build install all
 
-:all: build install
+all: build install
 
 build:
 	@echo "Building..."
@@ -14,7 +14,7 @@ build:
 
 install:
 	@echo "Installing..."
-	@cp dist/multipost ~/.local/share/multipost
+	@cp -r dist/multipost ~/.local/share/multipost
 	@ln -s ~/.local/share/multipost/multipost ~/.local/bin/multipost
 
 
