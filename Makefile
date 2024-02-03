@@ -14,6 +14,8 @@ build:
 
 install:
 	@echo "Installing..."
+	@rm -rf ~/.local/share/multipost
+	@rm  ~/.local/bin/multipost
 	@cp -r dist/multipost ~/.local/share/multipost
 	@ln -s ~/.local/share/multipost/multipost ~/.local/bin/multipost
 
