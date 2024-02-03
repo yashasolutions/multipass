@@ -9,7 +9,7 @@ import subprocess
 
 
 def quitCMD():
-    exit()
+    quit()
 
 class App(TKMT.ThemedTKinterFrame):
     def __init__(self):
@@ -64,7 +64,7 @@ class App(TKMT.ThemedTKinterFrame):
         subprocess.run(masto_cli, shell=True)
         subprocess.run(twitter_cli, shell=True)
 
-        exit()
+        quit()
 
 if __name__ == "__main__":
     App()
