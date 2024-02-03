@@ -5,8 +5,14 @@ from tkinter import ttk
 from tkinter import filedialog
 from tkinter import Text
 import subprocess
+import sys
 
 
+
+
+
+def quit():
+    sys.exit()
 
 def quitCMD():
     quit()
