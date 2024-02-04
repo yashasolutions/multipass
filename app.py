@@ -30,16 +30,20 @@ class App(TKMT.ThemedTKinterFrame):
                       blockcursor=True,
                       font=("Courier", 12),
                       wrap="word",
-                      width=40, height=10)
+                      width=80, height=10)
         self.textFrame.t.grid(row=0, column=0, padx=10, pady=10)
         self.textFrame.t.bind("<KeyRelease>", self.textupdate)
+        self.textFrame.t.focus()
         self.Button("Upload Image", self.upload_image)
         self.Button("Post", self.post)
         self.Button("Quit", quitCMD)
+        self.root.bind("<Control-Return>", lambda x: self.post())
+        self.root.bind("<Control-u>", lambda x: self.upload_image())
+
         self.run()
 
     def textupdate(self, event):
-        print("Current text status:", self.textFrame.t.get("1.0", "end-1c"))
+        #print("Current text status:", self.textFrame.t.get("1.0", "end-1c"))
         self.textinputvar.set(self.textFrame.t.get("1.0", "end-1c"))
 
     def printCMD(self):
